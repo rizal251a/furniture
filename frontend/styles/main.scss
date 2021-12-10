@@ -1,0 +1,307 @@
+body{
+    font-family: 'Assistant', sans-serif;
+    color: #3D3D3F;
+
+}
+
+//Navbar
+header{
+    background: linear-gradient(90deg, #F7F3F2 50%, #DAF3ED 50%);
+    
+    .navbar-brand{
+        margin-right: 100px;
+        img{
+            max-height: 30px;
+        }
+    }
+
+    .banner{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+
+        h1{
+            font-weight: bold;
+            font-size: 60px;
+            word-spacing: 10px;
+            margin-bottom: 15px;
+        }
+
+        p{
+            font-weight: 500;
+
+        }
+
+        .banner-color{
+            margin: 30px 0;
+            h5{
+                font-weight: 700;
+            }    
+        }
+
+        .price-discount{
+            margin-bottom: 20px;
+            h2{
+                font-weight: 800;
+            }
+
+            h4{
+                font-weight: 600;
+                color: #b1b1b1;
+            }
+        }
+
+        .btn-banner{
+            border-radius: 0;
+            color: #fff;
+            padding: 15px 20px;
+        }
+
+        .banner-pic{
+            img{
+                max-width: 90%;
+            }
+        }
+    }
+}
+
+main{
+    .new-arrival{
+        margin-top: 80px;
+
+        h1{
+            font-weight: bold;
+        }
+
+        h2{
+            font-size: 45px;
+        }
+
+        h3{
+            font-size: 35px;
+            font-weight: 600;
+            color: #b1b1b1;
+        }
+        .new-arrival-img{
+            img{
+                max-width: 100%;
+            }
+        }
+
+        .carousel-control-prev-edit, .carousel-control-next-edit {
+            position: absolute;
+            /* top: 0; */
+            /* bottom: 0; */
+            z-index: 1;
+            // display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            /* align-items: center; */
+            -ms-flex-pack: center;
+            justify-content: center;
+            min-width: 30px;
+            min-height: 30px;
+            color: #fff;
+            text-align: center;
+            opacity: 0.5;
+            transition: opacity 0.15s ease;
+
+            .carousel-control-next-icon, .carousel-control-prev-icon{
+                margin: auto;
+            }
+        }
+
+        .carousel-control-next-edit{
+            right: 40%;
+        }
+        .carousel-control-prev-edit{
+            left: 40%;
+        }
+    }
+
+    .banner-product{
+        background: linear-gradient(90deg, #DAF3ED 50%, #F7F3F2 50%);
+        margin-top: 150px;
+        min-height: 270px;
+
+        img{
+            max-height: 250px;
+            
+        }
+
+        .text-banner-product{
+            margin-top: auto;
+
+            h5{
+                font-weight: 800;
+            }
+        }
+
+        .banner-product-pic{
+            overflow: hidden;
+        }
+    }
+
+    .product{
+        margin-top: 120px;
+        .product-header{
+            h1{
+                font-weight: 700;
+            }
+    
+            a{
+                color: #b2b2b2;
+                font-size: 18px;
+                font-weight: 500;
+    
+                &:hover{
+                    text-decoration: none;
+                    color: #929292;
+                }
+            }
+    
+            .see-all-btn{
+                font-size: 16px;
+                color: #111;
+                font-weight: 500;
+    
+                &:hover{
+                    color: rgb(29, 29, 29);
+                }
+            }
+        }
+
+        .product-body{
+            min-height: 600px;
+            ul{
+                list-style: none;
+                margin: 50px 0 30px;
+
+                li{
+                    margin: 20px;
+                    cursor: pointer;
+                    color: #929292;
+
+                    &.active{
+                        color: #575757;
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            .product-item{
+                .item-box{
+                    border: none;
+                    margin: 20px 20px;
+                    background: linear-gradient(180deg, #F7F3F2 80%, #fff 20%);
+                    padding: 35px;
+                    height: 400px;
+                    
+
+                    h1{
+                        font-size: 24px;
+                    }
+
+                    h2{
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    .btn-add-cart{
+                        background-color: #D5C3B7;
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        // margin: auto auto 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        margin-top: -20px;
+                        margin-right: 10px;
+
+                        &:hover{
+                            background-color: #c9b2a3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .customer-experience{
+        margin-top: 40px;
+        .img-customer{
+            overflow: hidden;
+            img{
+                max-width: 100%;
+            }
+        }
+
+        h1{
+            font-weight: 600;
+            margin-bottom: 40px;
+            font-size: 70px;
+            color: #3D3D3F;
+        }
+
+        h4{
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        h5{
+            margin-top: 10px;
+            font-size: 16px;
+            color: #929292;
+        }
+    }
+}
+
+footer{
+    margin-top: 40px;
+    background: linear-gradient(90deg, #F7F3F2 50%, #D9F3ED 50%);
+
+    .footer-right, .footer-left{
+        padding: 50px 70px;
+    }
+
+    .footer-right{
+
+        .btn-email{
+            border: none;
+            background-color: #3D3D3F;
+            border-radius: unset;
+            color: #F7F3F2;
+            font-weight: 500;
+        }
+
+        .form-control{
+            border-radius: unset;
+        }
+
+        .form-control, .btn-email{
+            margin: 70px 0;
+        }
+    }
+
+    .footer-left{
+        ul{
+            list-style: none;
+            padding: 0;
+
+            li{
+                a{
+                    color: #111;
+                }
+            }
+        }
+
+        h2{
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .explore-more{
+            bottom: 0;
+        }
+    }
+}
